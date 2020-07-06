@@ -7,12 +7,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/music")
+@RestController
 public class MusicController {
 
     Logger log = LoggerFactory.getLogger(MusicController.class);
 
-    @GetMapping(path = "/music/all", produces = "application/json")
+    @GetMapping(path = "/entertainment/music/all", produces = "application/json")
     public ResponseEntity getAllMusic() {
         log.info("inside getAllMusic");
         return ResponseEntity.status(Response.Status.ACCEPTED.getStatusCode()).body("Music Body");
