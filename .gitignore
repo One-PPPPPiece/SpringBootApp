@@ -1,0 +1,15 @@
+.idea
+build
+out
+*.iml
+.gradle
+.project
+.classpath
+bin
+**/*.log
+**/vendor/**
+.bundle
+.ruby-version
+gradlew.bat
+.DS_Store
+*.hprof

@@ -1,1 +1,4 @@
 rootProject.name = 'entertainment.music'
+
+include 'applications:music-server'
+
