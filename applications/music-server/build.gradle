@@ -1,1 +1,1 @@
-apply from:"../apps.gradle"
+apply from:"../applications.gradle"
