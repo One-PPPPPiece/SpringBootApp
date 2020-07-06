@@ -29,8 +29,6 @@ plugins {
 	id 'org.springframework.boot' version "$springBootVersion"
 	id "com.github.sherter.google-java-format" version "$googleJavaFormatVersion"
 	id "jacoco"
-//	id 'io.spring.dependency-management' version "$springDependencyManagementVersion"
-//	id 'java'
 }
 
 repositories {
@@ -85,6 +83,9 @@ subprojects {
 		testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
 	}
 
+	googleJavaFormat {
+		options style: 'AOSP'
+	}
 
 	jacocoTestReport {
 		reports {
