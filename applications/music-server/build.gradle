@@ -2,4 +2,5 @@ apply from:"../applications.gradle"
 
 dependencies {
     implementation project(":components:music-service")
+    implementation project(":database")
 }

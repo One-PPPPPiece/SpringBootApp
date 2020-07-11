@@ -2,16 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.8/448003bc1b234aac04b58e27d7755c12c3ec4236/lombok-1.18.8.jar" />
         </processorPath>
         <module name="entertainment.music.applications.main" />
+        <module name="entertainment.music.database.main" />
         <module name="entertainment.music.applications.test" />
         <module name="entertainment.music.components.music-service.main" />
         <module name="entertainment.music.components.main" />
         <module name="entertainment.music.applications.music-server.main" />
+        <module name="entertainment.music.database.test" />
         <module name="entertainment.music.components.music-service.test" />
         <module name="entertainment.music.applications.music-server.test" />
         <module name="entertainment.music.components.test" />

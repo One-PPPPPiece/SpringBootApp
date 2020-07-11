@@ -2,3 +2,5 @@ rootProject.name = 'entertainment.music'
 
 include 'applications:music-server'
 include 'components:music-service'
+include 'database'
+
