@@ -1,4 +1,8 @@
-package com.ljh516.entertainment.music.db.entity;
+package com.ljh516.entertainment.music.db.repository;
 
-public class MusicRepository {
-}
+import com.ljh516.entertainment.music.db.entity.Music;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MusicRepository extends CrudRepository<Music, Long> {}
