@@ -4,6 +4,10 @@ import com.ljh516.entertainment.music.biz.MusicBO;
 import com.ljh516.entertainment.music.db.entity.Music;
 import com.ljh516.entertainment.music.intf.CreateMusicRequest;
 import com.ljh516.entertainment.music.validator.MusicRequestValidator;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,6 +23,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+@Api(
+        value = "Music",
+        tags = {"Music"})
 @RestController
 public class MusicController {
 
@@ -27,6 +34,12 @@ public class MusicController {
 
     private static final Logger log = LoggerFactory.getLogger(MusicController.class);
 
+    @ApiOperation(value = "Create a music", notes = "Create a music", produces = "application/json")
+    @ApiResponses(
+            value = {
+                @ApiResponse(code = 201, message = "Success creating music"),
+                @ApiResponse(code = 400, message = "Failed creating music")
+            })
     @PostMapping(
             path = "/entertainment/music",
             consumes = "application/json",
